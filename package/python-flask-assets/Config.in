@@ -1,0 +1,8 @@
+config BR2_PACKAGE_PYTHON_FLASK_ASSETS
+	bool "python-flask-assets"
+	select BR2_PACKAGE_PYTHON_FLASK # runtime
+	select BR2_PACKAGE_PYTHON_WEBASSETS # runtime
+	help
+		Provide Flask-Assets
+		
+		https://pypi.python.org/pypi/Flask-Assets

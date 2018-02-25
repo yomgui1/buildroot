@@ -1,0 +1,25 @@
+PathPlanner.py remove delta autocalibration
+
+Delta autocalibration routine uses scipy,
+but this last is not supported on buildroot.
+
+Signed-off-by: Guillaume Roguez <yomgui1@gmail.com>
+
+diff -purN redeem-develop.orig/redeem/PathPlanner.py redeem-develop/redeem/PathPlanner.py
+--- redeem-develop.orig/redeem/PathPlanner.py	2018-02-26 12:25:14.000000000 -0500
++++ redeem-develop/redeem/PathPlanner.py	2018-03-08 00:23:18.627435881 -0500
+@@ -31,11 +31,13 @@ from Printer import Printer
+ import numpy as np
+ from PruInterface import PruInterface
+ from BedCompensation import BedCompensation
+-from DeltaAutoCalibration import delta_auto_calibration
++#from DeltaAutoCalibration import delta_auto_calibration
+ from Alarm import Alarm
+ from six import iteritems
+ import traceback
+ 
++def delta_auto_calibration(*args, **kwds): pass
++
+ try:
+     from path_planner.PathPlannerNative import PathPlannerNative, AlarmCallbackNative
+ except Exception as e:

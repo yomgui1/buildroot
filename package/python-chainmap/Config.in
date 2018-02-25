@@ -1,0 +1,6 @@
+config BR2_PACKAGE_PYTHON_CHAINMAP
+	bool "python-chainmap"
+	help
+		Provide python-chainmap
+
+		https://bitbucket.org/jeunice/chainmap

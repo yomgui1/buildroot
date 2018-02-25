@@ -1,0 +1,20 @@
+config BR2_PACKAGE_REDEEM
+	bool "redeem"
+	select BR2_PACKAGE_PYTHON
+	select BR2_PACKAGE_PYTHON_NUMPY # setup.py + runtime
+	select BR2_PACKAGE_PYTHON_CONFIGOBJ # runtime
+	select BR2_PACKAGE_PYTHON_TESTFIXTURES # runtime
+	select BR2_PACKAGE_PYTHON_SYMPY # runtime
+	select BR2_PACKAGE_PYTHON_SH # runtime
+	select BR2_PACKAGE_PYTHON_SIX # runtime
+	select BR2_PACKAGE_PYTHON_PYUSB # runtime
+	select BR2_PACKAGE_PYTHON_PY # runtime
+	select BR2_PACKAGE_PYTHON_MOCK # runtime
+	select BR2_PACKAGE_PYTHON_FUNCSIGS # runtime
+	select BR2_PACKAGE_PYTHON_DOCUTILS # runtime
+	select BR2_PACKAGE_PYTHON_ADAFRUIT_GPIO # runtime
+	select BR2_PACKAGE_PYTHON_EVDEV # runtime
+	help
+		Provide Redeem
+
+		https://github.com/intelligent-agent/redeem

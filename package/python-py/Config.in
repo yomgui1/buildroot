@@ -1,0 +1,6 @@
+config BR2_PACKAGE_PYTHON_PY
+	bool "python-py"
+	help
+	  python-py
+
+	  https://pypi.python.org/pypi/py

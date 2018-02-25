@@ -1,0 +1,7 @@
+config BR2_PACKAGE_PYTHON_MOCK
+	bool "python-mock"
+	select BR2_PACKAGE_PYTHON_PBR # host
+	help
+	  python-mock
+
+	  https://pypi.python.org/pypi/mock

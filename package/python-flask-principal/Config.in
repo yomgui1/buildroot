@@ -1,0 +1,8 @@
+config BR2_PACKAGE_PYTHON_FLASK_PRINCIPAL
+	bool "python-flask-principal"
+	select BR2_PACKAGE_PYTHON_FLASK # runtime
+	select BR2_PACKAGE_PYTHON_BLINKER # runtime
+	help
+		Provide Flask-Principal
+		
+		https://pypi.python.org/pypi/Flask-Principal

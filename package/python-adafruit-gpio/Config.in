@@ -1,0 +1,8 @@
+config BR2_PACKAGE_PYTHON_ADAFRUIT_GPIO
+	bool "python-adafruit-gpio"
+	select BR2_PACKAGE_PYTHON_ADAFRUIT_BBIO # runtime
+	select BR2_PACKAGE_PYTHON_ADAFRUIT_PUREIO # runtime
+	help
+	  python-adafruit-gpio
+
+	  https://pypi.python.org/pypi/Adafruit_GPIO

@@ -1,4 +1,8 @@
+fdtfile=am335x-boneblack-uboot.dtb
+fdt_buffer=0x60000
+
+devtype=mmc
 bootpart=0:1
 bootdir=
-bootargs=console=ttyO0,115200n8 root=/dev/mmcblk0p2 rw rootfstype=ext4 rootwait
-uenvcmd=run loadimage;run loadfdt;printenv bootargs;bootz ${loadaddr} - ${fdtaddr};
+bootargs=console=ttyS0,115200n8 root=/dev/mmcblk0p2 rw rootfstype=ext4 rootwait bone_capemgr.uboot_capemgr_enabled=1
+uenvcmd=run loadimage;run loadfdt;setenv uboot_overlay BB-BONE-REPLICAP-0B3A.dtbo;run capeloadoverlay;printenv bootargs;bootz ${loadaddr} - ${fdtaddr};

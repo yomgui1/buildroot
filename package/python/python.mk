@@ -160,7 +160,6 @@ PYTHON_CONF_OPTS += \
 	--with-system-ffi \
 	--disable-pydoc \
 	--disable-test-modules \
-	--disable-lib2to3 \
 	--disable-gdbm \
 	--disable-tk \
 	--disable-nis \

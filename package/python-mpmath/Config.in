@@ -1,0 +1,6 @@
+config BR2_PACKAGE_PYTHON_MPMATH
+	bool "python-mpmath"
+	help
+		python-mpmath
+
+		https://pypi.python.org/pypi/mpmath

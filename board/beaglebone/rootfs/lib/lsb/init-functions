@@ -1,0 +1,43 @@
+#!/bin/sh
+
+# LSB initscript functions
+#
+# Guillaume Roguez <yomgui1@gmail.com>
+# Dummy implementation for non-LSB based buildroot distribution
+
+log_success_msg () {
+	echo "$@"
+}
+
+log_failure_msg () {
+	echo "$@"
+}
+
+log_warning_msg () {
+	echo "$@"
+}
+
+log_end_msg () {
+	echo "$@"
+}
+
+log_daemon_msg () {
+	echo "$@"
+}
+
+status_of_proc () {
+	if [ "$1" != "-p" ]; then
+		return
+	fi
+	if [ -r "$2" ]; then
+		pid=$(cat $2)
+	else
+		pid=-1
+	fi
+	if [ -e "/proc/${pid}/status" ]; then
+		log_success_msg "$4 is running."
+	else
+		log_failure_msg "$4 is not running."
+	fi
+}
+

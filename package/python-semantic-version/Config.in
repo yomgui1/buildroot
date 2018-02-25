@@ -1,0 +1,6 @@
+config BR2_PACKAGE_PYTHON_SEMANTIC_VERSION
+	bool "python-semantic-version"
+	help
+		Provide python-semantic-version
+
+		https://github.com/rbarrois/python-semanticversion

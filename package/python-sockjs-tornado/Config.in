@@ -1,0 +1,7 @@
+config BR2_PACKAGE_PYTHON_SOCKJS_TORNADO
+	bool "python-sockjs-tornado"
+	select BR2_PACKAGE_PYTHON_TORNADO # runtime
+	help
+		Provide python-sockjs-tornado
+
+ 		https://pypi.python.org/pypi/sockjs-tornado

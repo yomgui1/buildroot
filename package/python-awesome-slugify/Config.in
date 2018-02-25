@@ -1,0 +1,8 @@
+config BR2_PACKAGE_PYTHON_AWESOME_SLUGIFY
+	bool "python-awesome-slugify"
+	select BR2_PACKAGE_PYTHON_REGEX
+	select BR2_PACKAGE_PYTHON_UNIDECODE
+	help
+		Provide python-awesome-slugify
+
+		https://github.com/dimka665/awesome-slugify

@@ -1,0 +1,7 @@
+config BR2_PACKAGE_PYTHON_SYMPY
+	bool "python-sympy"
+	select BR2_PACKAGE_PYTHON_MPMATH
+	help
+	  python-sympy
+
+	  https://pypi.python.org/pypi/sympy

@@ -1,0 +1,6 @@
+config BR2_PACKAGE_PYTHON_PYASN1
+	bool "python-pyasn1"
+	help
+		Provide python-pyasn1
+
+		https://pypi.python.org/pypi/pyasn1

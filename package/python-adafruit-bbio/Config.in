@@ -1,0 +1,6 @@
+config BR2_PACKAGE_PYTHON_ADAFRUIT_BBIO
+	bool "python-adafruit-bbio"
+	help
+	  python-adafruit-bbio
+
+	  https://pypi.python.org/pypi/Adafruit_BBIO
